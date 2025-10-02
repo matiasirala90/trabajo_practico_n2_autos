@@ -1,22 +1,29 @@
 @echo off
 REM Crear entorno virtual con nombre tp2_autos
 python -m venv tp2_autos
-
+rem si en el caso no levanta la virtual y necesitas acceso a unos permisos  para que se pueda ejecutar un entorno virtual
+rem se usa 
+rem Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+rem sino usar 
+rem Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 REM Activar entorno
 call tp2_autos\Scripts\Activate
 
 rem tuve errores ERROR: Could not install packages due to an OSError: [WinError 5] Acceso denegado: 'g:\\programacion avanzada\\trabajo_practico_n2_autos\\tp2_autos\\scripts\\pip.exe'
 rem use  python -m pip install --upgrade pip
 rem me tiro esto G:\programacion avanzada\trabajo_practico_n2_autos\tp2_autos\Scripts\python.exe: No module named pip
-rem use esto curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-rem y lo instale con esto python get-pip.py
+rem use esto 
+rem curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+rem python get-pip.py
 
 REM Instalar librerías necesarias
 pip install --upgrade pip
 pip install pandas plotly flask
 
 REM Exportar dependencias a requirements.txt
+
 pip freeze > requirements.txt
 
 echo Entorno virtual 'tp2_autos' creado y configurado correctamente.
 echo Para activarlo en el futuro, ejecuta: tp2_autos\Scripts\activate
+
