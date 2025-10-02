@@ -66,7 +66,7 @@ Instalar dependencias:
 
 pip install flask pandas plotly
 
-
+#EXISTE UN ARCHIVO LLAMADO NOTEBOOK\INSTALACIONES CON LOS PASOS A SEGUIR PERO LOS PASOS LOGICOS SON ESTOS. SI NO GENERA NINGUN PROBLEMA
 Ejecutar la aplicación:
 
 python notebook/tp_auto.py
@@ -84,6 +84,10 @@ http://127.0.0.1:5000/
 ├─ autos.db                  # Base de datos SQLite
 ├─ Scripts
 │  └─ cargar_datos.py        # Script para crear y cargar la base
+├─ get-pip.py                # Forzador de instalacion
+├─ tp2_autos                 # Archivos del entorno
 ├─ notebook
+│  ├─ instalaciones          # PASOS A SEGUIR PARA LA INSTALACION DEL ENTORNO Y DEPENDENCIAS
 │  └─ tp_auto.py             # Dashboard interactivo (Flask)
 └─ README.md                 # Este archivo
+
