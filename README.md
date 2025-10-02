@@ -1,8 +1,13 @@
 
-DATOS DEL PROYECTO:
+
+------------------------------------------DATOS DEL PROYECTO----------------------------------------
+
 Materia: Programación Avanzada en Ciencia de datos
+
 Profesor: JUAN CARLOS CIFUENTES DURAN
+
 Trabajo realizado por: Irala Matias Jose
+
 Año: 02/10/2025
 ---------------------------------------------------------------------------------------------------
 # 🚗 Trabajo Práctico N°2 - Autos  
