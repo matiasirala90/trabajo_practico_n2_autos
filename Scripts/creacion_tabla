@@ -1,0 +1,10 @@
+CREATE TABLE car_sales (
+    id SERIAL PRIMARY KEY,         -- Identificador único (autoincremental)
+    manufacturer VARCHAR(100),     -- Marca del auto
+    model VARCHAR(100),            -- Modelo
+    engine_size DECIMAL(3,1),      -- Tamaño del motor (ej: 1.6, 2.0)
+    fuel_type VARCHAR(50),         -- Tipo de combustible (Petrol, Diesel, Hybrid, etc.)
+    year_of_manufacture INT,       -- Año de fabricación
+    mileage INT,                   -- Kilometraje
+    price INT                      -- Precio del vehículo
+);
